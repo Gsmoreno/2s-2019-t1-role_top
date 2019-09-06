@@ -1,0 +1,56 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background:url(img/fundo.jpg)no-repeat;
+    -webkit-backdrop-size: cover;
+    background-size: cover;
+    font-family: 'Chilanka', cursive;
+}
+
+.form-area{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+    background: #ffc800a1;
+    padding: 40px;
+}
+
+h2{
+    margin: 0px;
+    padding: 0 0 20px;
+    font-weight: bold;
+    color:#ffffff;
+
+}
+
+.form-area p{
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    color:#ffffff;
+}
+
+.form-area input,select{
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+.form-area input[type=text],
+.form-area input[type=email]
+{
+    border:none;
+    border-bottom: 1px solod #ffffff;
+    outline:none;
+    height: 40px;
+    color: #7d0093;
+    display: 16px;
+}
+
+::placeholder{
+    color: #7d0093;
+    
+}

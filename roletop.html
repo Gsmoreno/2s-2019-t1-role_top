@@ -8,17 +8,19 @@
     <link href="img/logo.png" rel="icon" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav> 
                 <ul>
-                    <li id="menu"><img src="img/menuu.png" title="menu" alt="menu" height="130px" width="130px" /></li>
-                    <li>A RoleTop</li>
-                    <li><a href="roletop.html#Galeria">Galeria</a></li>
-                    <li>Onde estamos</li>
+                    
+                    <li><a href="roletop.html#historia" >A RoleTop</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="roletop.html#localização">Onde estamos</a></li>
                     <li><a href="roletop.html#Agenda">Agenda</a></li>
-                    <li>FAQ</li>
+                    <li><a href="roletop.html#FAQ">FAQ</a></li>
+                    <li>Cadastro/Login</li>
                 </ul>
         </nav>
     <section id="logo-area">
@@ -38,60 +40,89 @@
 
 <hr />
 
-<section id="Galeria">
-    <div class="area-galeria">
-        <h2>Galeria</h2>
-        <ul>
-            <li><a href="#balada2"><img src="img/balada2.jpg" class="min"  ></a></li>
-            <li><a href="#balada3"><img src="img/balada3.jpg" class="min"></a></li>
-            <li><a href="#balada4"><img src="img/balada4.jpg" class="min"></a></li>
-            <li><a href="#hakkasan-las-vegas"><img src="img/hakkasan-las-vegas.jpg" class="min"></a></li>
-        </ul>
-    
-    
-    <div class="lbox" id="balada2"> 
-        <div class="box_img" >
-            <a href="#hakkasan-las-vegas" class="btn" id="prev">&#171;</a>
-            <a href="" class="btn" id="close">X</a>
-            <img src="img/balada2.jpg" alt="Fotos da festa" height="630px" width="930">
-            <a href="#balada3" class="btn" id="next">&#187;</a>
+<section id="historia">
+<h2>A RoleTop</h2>
+    <div id="aaa">
+        <div id="container-historia">
+            <h3>Nossa História</h3>
+                <p>
+                A RoleTop, de acordo com o que muitos relataram sobre a lenda, 
+                    é um dos seres que mais causavam medo nos indígenas nos séculos passados. 
+                    A descrição física desse ser afirma que ele teria corpo de menino, baixa estatura, 
+                    cabelos vermelhos e os pés ao contrário, isto é, com os calcanhares para frente. 
+                    Além disso, esse também teria grande força física.
+                    Essas características físicas fazem parte da versão mais conhecida dessa lenda,
+                    mas existem outras versões que apresentam o curupira com diferentes características. 
+                    Existem aqueles que dizem o curupira seria careca e com olhos e/ou dentes verdes, por exemplo.
+                </p>
+        </div>
+    <div id="aleecesar">
+        <div id="cesar">
+            <h3>Cesar Sportare</h3>
+                <p>
+                    Um dia descobrimos que beijar uma pessoa 
+                    para esquecer outra, é bobagem.
+                    Você não só não esquece a outra pessoa 
+                    como pensa muito mais nela
+                    Um dia nós percebemos que as mulheres têm instinto 
+                    "caçador" e fazem qualquer homem sofrer 
+                </p>
+        
+            </div>
+        <div id="ale">
+                <h3>Alexandre Fukaya</h3>
+                    <p>
+                        Um dia descobrimos que beijar uma pessoa 
+                        para esquecer outra, é bobagem.
+                        Você não só não esquece a outra pessoa 
+                        como pensa muito mais nela
+                        Um dia nós percebemos que as mulheres têm instinto 
+                        "caçador" e fazem qualquer homem sofrer 
+                    </p>
         </div>
     </div>
+    </div>
+</section>
 
-    <div class="lbox" id="balada3"> 
-            <div class="box_img" >
-                <a href="#balada2" class="btn" id="prev">&#171;</a>
-                <a href="" class="btn" id="close">X</a>
-                <img src="img/balada3.jpg" alt="Fotos da festa">
-                <a href="#balada4" class="btn" id="next">&#187;</a>
-            </div>
+<hr/>
+<h2>FAQ</h2>
+<section id="FAQ">
+    <button class="accordion">Claudio Pereira</button>
+        <div class="panel">
+        <p>Como eu faço o casdatro?</p>
         </div>
 
-        <div class="lbox" id="balada4"> 
-                <div class="box_img" >
-                    <a href="#balada3" class="btn" id="prev">&#171;</a>
-                    <a href="" class="btn" id="close">X</a>
-                    <img src="img/balada4.jpg" alt="Fotos da festa">
-                    <a href="#hakkasan-las-vegas" class="btn" id="next">&#187;</a>
-                </div>
+        <button class="accordion">Tomas Turbando</button>
+            <div class="panel">
+                <p>Como eu vejo a agenda??</p>
             </div>
 
-            <div class="lbox" id="hakkasan-las-vegas"> 
-                    <div class="box_img" >
-                        <a href="#balada4" class="btn" id="prev">&#171;</a>
-                        <a href="" class="btn" id="close">X</a>
-                        <img src="img/hakkasan-las-vegas.jpg" alt="Fotos da festa">
-                        <a href="#balada2" class="btn" id="next">&#187;</a>
-                    </div>
-                </div>
-            </section>
+        <button class="accordion">Elimin Rabá</button>
+            <div class="panel">
+                <p>Como eu faço o pagamento?</p>
+            </div>
+    <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+                acc[i].onclick = function(){
+                    this.classList.toggle("active");
+                    this.nextElementSibling.classList.toggle("show");
+                }
+            }
+    </script>        
+
+</section>
 
 <hr/>
 
-<h2>A RoleTop</h2>
+<section id="localização">
+    <h2>Onde Estamos</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8869961505543!2d-46.648477085071065!3d-23.53656648469522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deade6e3%3A0x124f377d06c7e71f!2sAlameda+Bar%C3%A3o+de+Limeira%2C+539+-+Campos+El%C3%ADseos%2C+S%C3%A3o+Paulo+-+SP%2C+01202-001!5e0!3m2!1sen!2sbr!4v1550223658410"
+    width="100%" height="100%" frameborder="0"></iframe>
 
-
-
+</section>
 
 
 </body>

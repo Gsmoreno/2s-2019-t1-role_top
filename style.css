@@ -47,6 +47,9 @@ body{
     display: flex;
     text-align: center;
     justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    padding: 2em;
 }
 
 .section-container > a {
@@ -55,6 +58,7 @@ body{
     text-decoration: none;
     font-weight: bold;
     text-align: center;
+    color:#ffc600;
 }
 
 .section-container ul > li{
@@ -74,6 +78,11 @@ body{
 
 
 
+nav ul > li > a:hover {
+    background-color:#7D0093;
+    color: #fff;
+}
+
 nav ul{
     display: flex;
     align-items: center;
@@ -89,7 +98,8 @@ nav ul > li {
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     display: flex;
-    justify-content: space-around;
+    padding-left: 8.7em;
+    
 }
 
 nav ul > li > a{
@@ -189,10 +199,179 @@ ul{
 ---------------------GALERIA-FINAL-------------
 ===============================================*/
 
+/*============================================== 
+-------------------HISTORIA-INICIO--------------
+================================================*/
 
 
+#aaa{
+    display: flex;
+    justify-content: center;
+}
+
+#container-historia{
+    background-image: linear-gradient(#7d0093, #ffc600);
+    text-align: center;
+    height: 600px ;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    margin: 25px;
+    border: black solid 4px;
+    border-radius: 20px;
+}
+
+#container-historia > h3{
+   display: block;
+   justify-content: center;
+   color: black;
+   font-size: 1.5em;
+   padding: 2em;
+   color: white;
+   font-family: 'Chilanka', cursive;
+}   
+
+#container-historia p{
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: white;
+    width: 592px;
+    height: 400px;
+    font-family: 'Chilanka', cursive;
+
+ }
+ 
+
+ #cesar{
+    background-image: linear-gradient(#7d0093, #ffc600);
+    height: 300px ;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    margin: 25px;
+    border: black solid 4px;
+    border-radius: 20px;
+    justify-content: space-between;    
+}
+
+#cesar > h3{
+   display: block;
+   justify-content: center;
+   color: black;
+   font-size: 1.5em;
+   padding: 2em;
+   color: white;
+   font-family: 'Chilanka', cursive;
+}   
+
+#cesar p{
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: white;
+    width: 592px;
+    height: 200px;
+    font-family: 'Chilanka', cursive;
+
+ }
+
+ #ale{
+    background-image: linear-gradient(#7d0093, #ffc600);
+    height: 300px ;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    margin: 25px;
+    border: black solid 4px;
+    border-radius: 20px;
+    justify-content: space-between;    
+}
+
+#ale > h3{
+   display: block;
+   justify-content: center;
+   color: black;
+   font-size: 1.5em;
+   padding: 2em;
+   color: white;
+   font-family: 'Chilanka', cursive;
+}   
+
+#ale p{
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: white;
+    width: 592px;
+    height: 200px;
+    font-family: 'Chilanka', cursive;
+
+ }
+
+/*============================================== 
+-------------------HISTORIA-FINAL--------------
+================================================*/
 
 
+/*============================================== 
+-------------------FAQ-INICIO--------------
+================================================*/
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
+div.panel.show {
+    display: block;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+button.accordion:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
 
 
 
