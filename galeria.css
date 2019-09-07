@@ -129,6 +129,7 @@ nav ul > li {
     font-family: 'Josefin Sans', sans-serif;
     display: flex;
     justify-content: space-around;
+    padding-left: 4.7em;
 }
 
 nav ul > li > a{

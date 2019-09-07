@@ -9,8 +9,8 @@ body{
 
 .form-area{
     position: absolute;
-    top: 50%;
-    left:50%;
+    top: 65%;
+    left:30%;
     transform: translate(-50%, -50%);
     width: 400px;
     height: 500px;
@@ -22,7 +22,7 @@ h2{
     margin: 0px;
     padding: 0 0 20px;
     font-weight: bold;
-    color:#ffffff;
+    color:#7d0093;
 
 }
 
@@ -30,7 +30,7 @@ h2{
     margin: 0px;
     padding: 0px;
     font-weight: bold;
-    color:#ffffff;
+    color:#7d0093;
 }
 
 .form-area input,select{
@@ -43,7 +43,7 @@ h2{
 .form-area input[type=email]
 {
     border:none;
-    border-bottom: 1px solod #ffffff;
+    border-bottom: 1px solod #7d0093;
     outline:none;
     height: 40px;
     color: #7d0093;
@@ -54,3 +54,132 @@ h2{
     color: #7d0093;
     
 }
+
+.form-area select{
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.form-area input[type=submit]{
+    border:none;
+    height: 40px;
+    outline: none;
+    color: #7d0093;
+    font-size: 15px;
+    background-color: #ffc600;
+    cursor: pointer;
+    border-radius:10px;
+}
+
+
+
+/************************************************************** 
+---------------------CADASTRO-INICIO--------------------------
+****************************************************************/
+
+.Cadastro{
+    position: absolute;
+    top: 65%;
+    right:0%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+    background: #ffc800a1;
+    padding: 40px;
+}
+
+h2{
+    margin: 0px;
+    padding: 0 0 20px;
+    font-weight: bold;
+    color:#7d0093;
+
+}
+
+.Cadastro p{
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    color:#7d0093;
+}
+
+.Cadastro input,select{
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+.Cadastro input[type=text],
+.Cadastro input[type=email]
+{
+    border:none;
+    border-bottom: 1px solod #7d0093;
+    outline:none;
+    height: 40px;
+    color: #7d0093;
+    display: 16px;
+}
+
+::placeholder{
+    color: #7d0093;
+    
+}
+
+.Cadastro select{
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.Cadastro input[type=submit]{
+    border:none;
+    height: 40px;
+    outline: none;
+    color: #7d0093;
+    font-size: 15px;
+    background-color: #ffc600;
+    cursor: pointer;
+    border-radius:10px;
+}
+
+/*=====================================
+---------------NAV-INICIO--------------
+======================================= */
+
+nav{
+    background-image: url(img/fundo.jpg);
+}
+
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 0.2em;
+    justify-content: space-between;
+}    
+
+nav ul > li {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul > li > a{
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+
+#menu{
+    align-self: flex-start;
+}
+
+/*=====================================
+---------------NAV-FINAL--------------
+======================================= */

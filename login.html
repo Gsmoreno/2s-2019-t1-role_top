@@ -7,9 +7,22 @@
     <title>Login/Cadastro</title>
     <link rel="stylesheet" type="text/css" href="login.css">
     <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+    <link href="img/logo.png" rel="icon" type="image/x-icon">
 </head>
 <body>
-    
+    <header>
+        <nav> 
+                <ul>
+                    <li><img src="img/logo.png" title="logo" alt="logo super maneiro" height="100px" width="100px" > </li>
+                    <li>A RoleTop</li>
+                    <li><a href="roletop.html#Galeria">Galeria</a></li>
+                    <li>Onde estamos</li>
+                    <li><a href="roletop.html#Agenda">Agenda</a></li>
+                    <li>FAQ</li>
+                </ul>
+        </nav>
+   
+        <hr/>
     <div class="form-area">
         <h2>Login</h2>
         <form action="">
@@ -45,8 +58,46 @@
             <input type="" name="" placeholder="Sua resposta">
             
             <a href="Esqueceu a senha?"></a>
+        
+            <button onclick="myFunction()">Confirmar</button>
+
+                <script>
+                    function myFunction() {
+                    var x = document.createElement("INPUT");
+                    x.setAttribute("type", "button");
+                    x.setAttribute("value", "Click me");
+                    document.body.appendChild(x);
+                    }
+                </script>
+                      
         </form>
+    
     </div>
     
+    <div class="Cadastro">
+        <h2>Cadastro</h2>
+        <form action="">
+            <p>Email:</p>
+            <input type="text" name="" placeholder="Email">
+
+            <p>Senha:</p>
+            <input type="password" name="" placeholder="password">
+
+            <p>Confirme a senha:</p>
+            <input type="password" name="" placeholder="password">
+            
+
+            <button onclick="myFunction()">Confirmar</button>
+
+            <script>
+                function myFunction() {
+                var x = document.createElement("INPUT");
+                x.setAttribute("type", "button");
+                x.setAttribute("value", "Click me");
+                document.body.appendChild(x);
+                }
+            </script>
+        </form>        
+    </div>
 </body>
 </html>
