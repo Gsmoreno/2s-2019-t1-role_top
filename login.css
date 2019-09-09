@@ -69,7 +69,10 @@ h2{
     background-color: #ffc600;
     cursor: pointer;
     border-radius:10px;
+   
 }
+
+
 
 
 
@@ -151,6 +154,11 @@ nav{
 
 
 
+nav ul > li > a:hover {
+    background-color:#7D0093;
+    color: #fff;
+}
+
 nav ul{
     display: flex;
     align-items: center;
@@ -183,3 +191,7 @@ nav ul > li > a{
 /*=====================================
 ---------------NAV-FINAL--------------
 ======================================= */
+
+#confirmar{
+
+}
