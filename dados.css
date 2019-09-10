@@ -3,6 +3,14 @@
     padding: 0;
 }
 
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+    font-size: 2em;
+}
+
 /*=====================================
 ---------------NAV-INICIO--------------
 ======================================= */
@@ -44,7 +52,139 @@ nav ul > li > a{
 }
 
 
-}
+
 
 /* DADOS */
 
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+ section{
+    text-align: center;
+    
+}
+
+body{
+    background-image: url(img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 2335px;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    margin: 0px;
+    
+}
+
+
+
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+}
+
+#Agenda{
+    text-align: center;
+    padding: 1.5em;
+    font-size: 30px;
+}
+
+#Agenda ul{
+    display: flex;
+    justify-content: space-between;
+    color: #ddd;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+#Agenda ul > li:first-child{
+    color: red;
+}
+
+#Agenda ul > li:last-child{
+    color: green;
+}
+
+body{
+    text-align: center;
+    }
+
+    /*=========================================
+------------CALENDARIO-INICO---------------
+===========================================*/
+
+ #tabela{
+    background-image: url(img/fundo.jpg);
+    display: flex;
+    justify-content: center;
+    color: #eee;
+}
+
+#ddd{
+   background-color: red;
+}
+
+#zzz{
+    background-image: url(img/gxp.png);
+}
+
+#fff{
+   background-image: url(img/xt.png);
+   color: black;
+}
+
+#lll{
+    background-color: green;
+}
+/* historia */
+#aaa{
+    display: flex;
+    justify-content: center;
+}
+
+#container-historia{
+    background-image: linear-gradient(#7d0093, #ffc600);
+    text-align: center;
+    height: 800px ;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    margin: 25px;
+    border: black solid 4px;
+    border-radius: 20px;
+}
+
+#container-historia > h3{
+   display: block;
+   justify-content: center;
+   color: black;
+   font-size: 1.5em;
+   padding: 2em;
+   color: white;
+   font-family: 'Chilanka', cursive;
+}   
+
+#container-historia p{
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: white;
+    width: 599,4px;
+    height: 500px;
+    font-family: 'Chilanka', cursive;
+    text-align: left;
+
+ }
+
+ #container-historia p > a{
+    display: flex;
+    padding-left: 25%;
+    
+
+ }

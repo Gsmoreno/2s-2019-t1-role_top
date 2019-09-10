@@ -103,8 +103,10 @@ body{
 
 
 nav ul > li > a:hover {
-    background-color:#7D0093;
+   
     color: #fff;
+    text-decoration: underline #7D0093;
+    
 }
 
 nav ul{
@@ -135,6 +137,8 @@ nav ul > li > a{
 #menu{
     align-self: flex-start;
 }
+
+
 
 /* ============================================
 ------------------GALERIA----------------------
@@ -214,9 +218,6 @@ ul{
     padding: 3em;
 }
 
-.area-galeria{
-    
-}
 
 /*============================================
 ---------------------GALERIA-FINAL-------------
