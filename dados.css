@@ -19,7 +19,12 @@ nav{
     background-image: url(img/fundo.jpg);
 }
 
-
+nav ul > li > a:hover {
+   
+    color: #fff;
+    text-decoration: underline #7D0093;
+    
+}
 
 nav ul{
     display: flex;
