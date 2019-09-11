@@ -82,10 +82,7 @@ ul{
     padding: 3em;
 }
 
-.area-galeria h2 {
 
-    
-}
 
 /*============================================
 ---------------------GALERIA-FINAL-------------
@@ -96,6 +93,7 @@ h2{
     display:flex;
     padding: 1.3em;
     color: white;
+    font-family: 'Chilanka', cursive;
 }
 
 body{
@@ -131,7 +129,7 @@ nav ul > li {
     width: 100%;
     text-align: center;
     color: white;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Chilanka', cursive;
     display: flex;
     justify-content: space-around;
     padding-left: 4.7em;

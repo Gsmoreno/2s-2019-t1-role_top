@@ -13,21 +13,28 @@
     <script src='fullcalendar/lib/moment.min.js'></script>
     <script src='fullcalendar/fullcalendar.js'></script>
     <script src='fullcalendar/lang/pt-br.js'></script>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
 </head>
 <body >
     <header>
         <nav > 
                 <ul>
-                    <li><img src="img/menuu.png" height="175px" width="175px"></li>
-                    <li><a href="roletop.html#historia" >A RoleTop</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="roletop.html#localização">Onde estamos</a></li>
-                    <li><a href="roletop.html#Agenda">Agenda</a></li>
-                    <li><a href="roletop.html#FAQ">FAQ</a></li>
-                    <li><a href="login.html">Cadastro/Login</a></li>
+                        <li id="bt-mobile-menu">
+                                <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                            </li>
+                   
+                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href="roletop.html#historia" >A RoleTop</a></li>
+                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href="galeria.html">Galeria</a></li>
+                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href="roletop.html#localização">Onde estamos</a></li>
+                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href="roletop.html#Agenda">Agenda</a></li>
+                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href="roletop.html#FAQ">FAQ</a></li>
+                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href="login.html">Cadastro/Login</a></li>
                 </ul>
-              
+                
                
     </nav>
     <section id="logo-area">
@@ -187,6 +194,29 @@
 
 </section>
 
+<script>
+    function toggleMobileMenu() {
+        var ul = document.querySelector("nav ul");
+        var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+        var icon = document.querySelector(".icon > i");
+        ul.classList.toggle("mobile-mode");
+        if (icon.classList.contains("fa-bars")) {
+            icon.classList.remove("fa-bars");
+            icon.classList.remove("fa");
+            icon.classList.add("fas");
+            icon.classList.add("fa-skull");
+        } else {
+            icon.classList.remove("fas");
+            icon.classList.remove("fa-skull");
+            icon.classList.add("fa");
+            icon.classList.add("fa-bars");
+        }
+        for (var button of commonButtons) {
+            button.classList.toggle("active");
+        }
+    }
+    
+</script>
 
 </body>
 

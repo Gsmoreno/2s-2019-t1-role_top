@@ -69,6 +69,8 @@ main {
 h2 {
     font-size: 1.8em;
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 h3 {
@@ -246,6 +248,10 @@ body{
 #aaa{
     display: flex;
     justify-content: center;
+}
+
+#historia{
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #container-historia{

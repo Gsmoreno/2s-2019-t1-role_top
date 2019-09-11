@@ -41,17 +41,19 @@ h2{
     font-size: 30px;
 }
 
-#Agenda ul{
+#Agenda ul {
     display: flex;
     justify-content: space-between;
     color: #ddd;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.7em;
 }
 
 
 
 #Agenda ul > li:first-child{
     color: red;
+    font-size: 0.9em;
 }
 
 body{
@@ -114,7 +116,9 @@ ul {
 ---------------NAV-INICIO--------------
 ======================================= */
 
-
+nav #bt-mobile-menu {
+    display: none;
+}
 
 
 nav ul > li > a:hover {
@@ -356,7 +360,240 @@ button.accordion.active:after {
  }
 
 
+/* *****************************************
+---------------RESPONSIVO-INICIO------------
+********************************************/
+@media(max-width:1200px){
+
+.section-container{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+#localização{
+    width: 100%;
+    height: 100%;
+}
+
+#FAQ{
+    width: 100%;
+    height: 100%;
+    
+}
+
+hr{
+    width: 100%;
+    height: 100%;
+    
+}
+
+h2{
+    text-align: center;
+   
+}
 
 
 
+#Agenda{
+    width: 100%;
+    height: 100%;
+}
 
+tr ul > li{
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo-area{
+    width: 100%;
+    height: 100%;
+}
+
+img{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+nav #bt-mobile-menu {
+    display: block;
+}
+
+nav .bt-common-menu {
+    display: none;
+}
+
+nav .bt-common-menu.active {
+    display: block;
+}
+
+nav ul.mobile-mode {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+ 
+
+/*=========================================
+------------CALENDARIO-INICO---------------
+===========================================*/
+
+#tabela{
+    background-image: url(img/fundo.jpg);
+    display: flex;
+    justify-content: center;
+    color: #eee;
+}
+
+#ddd{
+   background-color: red;
+}
+
+#zzz{
+    background-image: url(img/gxp.png);
+}
+
+#fff{
+   background-image: url(img/xt.png);
+   color: black;
+}
+
+th{
+    font-size: 0.5em;
+    height: 100%;
+    width: 100%;
+}
+
+td{
+    font-size: 0.5em;
+    height: 100%;
+    width: 100%;
+}
+
+ul{
+    height: 100%;
+    width: 100%;
+}
+
+}
+
+/*============================================== 
+-------------------HISTORIA-INICIO--------------
+================================================*/
+
+
+#aaa{
+    display: flex;
+    justify-content: center;
+}
+
+#container-historia{
+    background-image: linear-gradient(#7d0093, #ffc600);
+    text-align: center;
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    margin: 25px;
+    border: black solid 4px;
+    border-radius: 20px;
+}
+
+#container-historia > h3{
+   display: block;
+   justify-content: center;
+   color: black;
+   font-size: 1.5em;
+   padding: 2em;
+   color: white;
+   font-family: 'Chilanka', cursive;
+}   
+
+#container-historia p{
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: white;
+    width: 100%;
+    
+    font-family: 'Chilanka', cursive;
+
+ }
+ 
+
+ #cesar{
+    background-image: linear-gradient(#7d0093, #ffc600);
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    margin: 25px;
+    border: black solid 4px;
+    border-radius: 20px;
+    justify-content: space-between;    
+}
+
+#cesar > h3{
+   display: block;
+   justify-content: center;
+   color: black;
+   font-size: 1.5em;
+   padding: 2em;
+   color: white;
+   font-family: 'Chilanka', cursive;
+}   
+
+#cesar p{
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: white;
+    width: 100%;
+    
+    font-family: 'Chilanka', cursive;
+
+ }
+
+ #ale{
+    background-image: linear-gradient(#7d0093, #ffc600);
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    margin: 25px;
+    border: black solid 4px;
+    border-radius: 20px;
+    justify-content: space-between;    
+}
+
+#ale > h3{
+   display: block;
+   justify-content: center;
+   color: black;
+   font-size: 1.5em;
+   padding: 2em;
+   color: white;
+   font-family: 'Chilanka', cursive;
+}   
+
+#ale p{
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: white;
+    width: 100%;
+    
+    font-family: 'Chilanka', cursive;
+
+ }
+
+/*============================================== 
+-------------------HISTORIA-FINAL--------------
+================================================*/
