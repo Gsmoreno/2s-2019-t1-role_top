@@ -1,0 +1,75 @@
+﻿@{
+    var nomeView = (string) ViewData["NomeView"];
+}
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RoleTop</title>
+    <link href="img/logo.png" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="~/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+    <script src='fullcalendar/lib/jquery.min.js'></script>
+    <script src='fullcalendar/lib/moment.min.js'></script>
+    <script src='fullcalendar/fullcalendar.js'></script>
+    <script src='fullcalendar/lang/pt-br.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+    @if(!"Home".Equals(nomeView))
+    {
+        <link rel="stylesheet" type="text/css" href="~/css/login.css">
+    }
+</head>
+        
+    <body >
+    <header>
+        <nav > 
+                <ul>
+                        <li id="bt-mobile-menu">
+                                <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                            </li>
+                   
+                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href= '@Url.Action("Index", "Home")#historia' >A RoleTop</a></li>
+                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" asp-controller="cliente" asp-action="Galeria">Galeria</a></li>
+                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href= '@Url.Action("Index", "Home")#localização'>Onde estamos</a></li>
+                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href= '@Url.Action("Index", "Home")#Agenda'>Agenda</a></li>
+                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href= '@Url.Action("Index", "Home")#FAQ'>FAQ</a></li>
+                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" asp-controller="cliente" asp-action="Login">Cadastro/Login</a></li>
+                </ul>
+                
+               
+    @if("Home".Equals(nomeView))
+        {
+            Html.RenderPartial("_HeaderHomePage");
+        }
+    </nav>
+</header>
+</body>
+        @RenderBody()
+
+        <footer>
+    <div class="section-container ">
+        <address>
+            Avenida de Limeira, 539 - Campos Elíseos - SP  
+            <br />
+            RoleTop@email.com
+            <br />
+            11 1234 6789
+        </address>
+        <a href="#">Voltar para o topo!</a>
+        <ul> 
+            <li><img src="img/what.png" title="Whatsap" alt="Whatsap" > </li>
+            <li><img src="img/insta.png" title="Insta" alt="Instagram" ></li>
+            <li><img src="img/face.png" title="Face" alt="Face"></li> 
+            <li></li>
+            
+        </ul>
+    </div>
+</footer>
+</html>
