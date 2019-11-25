@@ -1,31 +1,24 @@
-﻿
-<body>
+<link rel="stylesheet" type="text/css" href="~/css/user.css">
+
     <header>
-        <nav > 
+        <nav> 
                 <ul>
-                        <li id="bt-mobile-menu">
-                                <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
-                                    <i class="fa fa-bars"></i>
-                                </a>
-                            </li>
-                    
-                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href= '@Url.Action("Index", "Home")#historia' >A RoleTop</a></li>
-                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" asp-controller="cliente" asp-action="Galeria">Galeria</a></li>
-                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href= '@Url.Action("Index", "Home")#localização'>Onde estamos</a></li>
-                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href= '@Url.Action("Index", "Home")#Agenda'>Agenda</a></li>
-                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href= '@Url.Action("Index", "Home")#FAQ'>FAQ</a></li>
-                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" asp-controller="cliente" asp-action="Login">Cadastro/Login</a></li>
+                    <li><img src="../img/menuu.png" height="175px" width="175px"></li>
+                    <li><a href= '@Url.Action("Usuario", "Home")#historia' >A RoleTop</a></li>
+                    <li><a asp-controller="cliente" asp-action="Galeria">Galeria</a></li>
+                    <li><a href= '@Url.Action("Usuario", "Home")#localização'>Onde estamos</a></li>
+                    <li><a href= '@Url.Action("Usuario", "Home")#Agenda'>Agenda</a></li>
+                    <li><a asp-controller="cliente" asp-action="Dados">Carlos</a></li>
                 </ul>
-                
-                
-    </nav>
+        </nav>
+    <section id="logo-area">
+        <img src="../img/logo.png" title="Logo" alt="Logo tipo super maneiro meuuuu" height="300px" width="350px" />
+        <h2>Aqui seu Role fica Top! </h2>
+    </section>
 </header>
-</body>
 
 <hr/>
 <section id="Agenda">
-<img src="img/logo.png" alt="logo" width="250px" height="200px"> 
-<h4>Aqui seu Role fica Top!</h4>
 <h2>Agenda</h2>
     <table border="3"  id="tabela">
        
@@ -175,50 +168,4 @@
 
 </section>
 
-<script>
-    function toggleMobileMenu() {
-        var ul = document.querySelector("nav ul");
-        var commonButtons = document.querySelectorAll("nav .bt-common-menu");
-        var icon = document.querySelector(".icon > i");
-        ul.classList.toggle("mobile-mode");
-        if (icon.classList.contains("fa-bars")) {
-            icon.classList.remove("fa-bars");
-            icon.classList.remove("fa");
-            icon.classList.add("fas");
-            icon.classList.add("fa-skull");
-        } else {
-            icon.classList.remove("fas");
-            icon.classList.remove("fa-skull");
-            icon.classList.add("fa");
-            icon.classList.add("fa-bars");
-        }
-        for (var button of commonButtons) {
-            button.classList.toggle("active");
-        }
-    }
-    
-</script>
 
-<footer>
-    <div class="section-container ">
-        <address>
-            Avenida de Limeira, 539 - Campos Elíseos - SP  
-            <br />
-            RoleTop@email.com
-            <br />
-            11 1234 6789
-        </address>
-        <a href="#">Voltar para o topo!</a>
-        <ul> 
-            <li><img src="img/what.png" title="Whatsap" alt="Whatsap" > </li>
-            <li><img src="img/insta.png" title="Insta" alt="Instagram" ></li>
-            <li><img src="img/face.png" title="Face" alt="Face"></li> 
-            <li></li>
-            
-        </ul>
-    </div>
-</footer>
-
-
-
-</html>

@@ -19,13 +19,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
-    @if(!"Home".Equals(nomeView))
+    @if("Login".Equals(nomeView))
     {
         <link rel="stylesheet" type="text/css" href="~/css/login.css">
-    }
-</head>
         
-    <body >
+        
+    }
+    
+</head>
+
+<body>
     <header>
         <nav > 
                 <ul>
@@ -34,7 +37,7 @@
                                     <i class="fa fa-bars"></i>
                                 </a>
                             </li>
-                   
+                    
                     <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href= '@Url.Action("Index", "Home")#historia' >A RoleTop</a></li>
                     <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" asp-controller="cliente" asp-action="Galeria">Galeria</a></li>
                     <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href= '@Url.Action("Index", "Home")#localização'>Onde estamos</a></li>
@@ -43,33 +46,16 @@
                     <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" asp-controller="cliente" asp-action="Login">Cadastro/Login</a></li>
                 </ul>
                 
-               
-    @if("Home".Equals(nomeView))
-        {
-            Html.RenderPartial("_HeaderHomePage");
-        }
+                
     </nav>
 </header>
 </body>
+        
+        
+    
         @RenderBody()
 
-        <footer>
-    <div class="section-container ">
-        <address>
-            Avenida de Limeira, 539 - Campos Elíseos - SP  
-            <br />
-            RoleTop@email.com
-            <br />
-            11 1234 6789
-        </address>
-        <a href="#">Voltar para o topo!</a>
-        <ul> 
-            <li><img src="img/what.png" title="Whatsap" alt="Whatsap" > </li>
-            <li><img src="img/insta.png" title="Insta" alt="Instagram" ></li>
-            <li><img src="img/face.png" title="Face" alt="Face"></li> 
-            <li></li>
-            
-        </ul>
-    </div>
-</footer>
+        
+
+
 </html>

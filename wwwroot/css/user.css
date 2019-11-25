@@ -16,7 +16,7 @@
    }
    
    body{
-       background-image: url(img/fundo.jpg);
+       background-image: url(../img/fundo.jpg);
        background-repeat: no-repeat;
        background-size: 2335px;
        background-position: center;
@@ -106,7 +106,7 @@
    
    
    nav ul > li > a:hover {
-       background-color:#7D0093;
+       background-color: underline #7D0093;
        color: #fff;
    }
    
@@ -401,7 +401,7 @@
    ===========================================*/
    
     #tabela{
-        background-image: url(img/fundo.jpg);
+        background-image: url(../img/fundo.jpg);
         display: flex;
         justify-content: center;
         color: #eee;
@@ -412,11 +412,11 @@
     }
    
     #zzz{
-        background-image: url(img/gxp.png);
+        background-image: url(../img/gxp.png);
     }
    
     #fff{
-       background-image: url(img/xt.png);
+       background-image: url(../img/xt.png);
        color: black;
     }
    

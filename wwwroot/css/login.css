@@ -11,10 +11,12 @@ a{
     padding: 1em;
 }
 
+
+
 body{
     margin: 0px;
     padding: 0px;
-    background:url(img/fundo.jpg)no-repeat;
+    background:url(../img/fundo.jpg)no-repeat;
     -webkit-backdrop-size: cover;
     background-size: cover;
     font-family: 'Chilanka', cursive;
@@ -143,6 +145,7 @@ button, input {
 
 
 
+
 /************************************************************** 
 ---------------------CADASTRO-INICIO--------------------------
 ****************************************************************/
@@ -249,7 +252,7 @@ h2{
 ======================================= */
 
 nav{
-    background-image: url(img/fundo.jpg);
+    background-image: url(../img/fundo.jpg);
 }
 
 
@@ -288,6 +291,8 @@ nav ul > li > a{
 #menu{
     align-self: flex-start;
 }
+
+
 
 /*=====================================
 ---------------NAV-FINAL--------------

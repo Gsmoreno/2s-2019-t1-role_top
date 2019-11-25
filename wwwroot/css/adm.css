@@ -4,7 +4,7 @@
 }
 
 body{
-background-image: url(img/fundo.jpg);
+background-image: url(../img/fundo.jpg);
 }
 
 nav ul > li > a:hover {
@@ -16,7 +16,7 @@ nav ul > li > a:hover {
 
 
 nav{
-    background-image: url(img/fundo.jpg);
+    background-image: url(../img/fundo.jpg);
 }
 
 

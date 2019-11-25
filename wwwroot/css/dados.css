@@ -16,7 +16,7 @@ h2{
 ======================================= */
 
 nav{
-    background-image: url(img/fundo.jpg);
+    background-image: url(../img/fundo.jpg);
 }
 
 nav ul > li > a:hover {
@@ -73,7 +73,7 @@ html{
 }
 
 body{
-    background-image: url(img/fundo.jpg);
+    background-image: url(../img/fundo.jpg);
     background-repeat: no-repeat;
     background-size: 2335px;
     background-position: center;
@@ -124,7 +124,7 @@ body{
 ===========================================*/
 
  #tabela{
-    background-image: url(img/fundo.jpg);
+    background-image: url(../img/fundo.jpg);
     display: flex;
     justify-content: center;
     color: #eee;
@@ -135,11 +135,11 @@ body{
 }
 
 #zzz{
-    background-image: url(img/gxp.png);
+    background-image: url(../img/gxp.png);
 }
 
 #fff{
-   background-image: url(img/xt.png);
+   background-image: url(../img/xt.png);
    color: black;
 }
 
