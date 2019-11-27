@@ -2961,8 +2961,18 @@
   "RootNamespace": "RoleTopMVC",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\49801332824\\Desktop\\workspace\\2s-2019-t1-role_top\\Role Top\\RoleTopMVC\\Views\\Cliente\\Dados.cshtml",
+      "TargetPath": "Views\\Cliente\\Dados.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\49801332824\\Desktop\\workspace\\2s-2019-t1-role_top\\Role Top\\RoleTopMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49801332824\\Desktop\\workspace\\2s-2019-t1-role_top\\Role Top\\RoleTopMVC\\Views\\Cliente\\Galeriauser.cshtml",
+      "TargetPath": "Views\\Cliente\\Galeriauser.cshtml",
       "FileKind": "mvc"
     },
     {

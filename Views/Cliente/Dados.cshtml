@@ -1,0 +1,190 @@
+<link rel="stylesheet" type="text/css" href="~/css/dados.css">
+
+<header>
+        <nav> 
+                <ul>
+                    
+                    <li><a href= '@Url.Action("Dados", "Home")#historia' >A RoleTop</a></li>
+                    <li><a asp-controller="cliente" asp-action="Galeriauser">Galeria</a></li>
+                    <li><a href= '@Url.Action("Dados", "Home")#localização'>Onde estamos</a></li>
+                    <li><a href= '@Url.Action("Dados", "Home")#Agenda'>Agenda</a></li>
+                    <li><a asp-controller="cliente" asp-action="Dados">Carlos</a></li>
+                </ul>
+        </nav>
+
+<section id="Agenda">
+            <h2>Agenda</h2>
+                <table border="3"  id="tabela">
+                   
+                    
+                    <td colspan="7">SETEMBRO</td>
+                    
+                    <tr >
+                       <ul>
+                           <li>Indisponivel</li>
+                           <li>Disponivel</li>
+                           <li>Seu Evento</li>
+                          
+                       </ul>
+                        
+                        
+                        <th id="ddd" width="70px" height="70px">1</th>
+                        <th id="zzz" width="70px" height="70px">2</th>
+                        <th id="zzz" width="70px" height="70px">3</th>
+                        <th id="lll" width="70px" height="70px"> <button onclick="funcao1()">4</button>
+ 
+                            <p id="demo"></p>
+                            
+                            <script>
+                            function funcao1()
+                            {
+                            var x;
+                            var r=confirm("Deseja cancelar esse evento?");
+                            if (r==true)
+                            {
+                            x="você cancelou esse evento!";
+                            }
+                            else
+                            {
+                            x="";
+                            }
+                            document.getElementById("demo").innerHTML=x;
+                            }
+                            </script></a></td></th>
+                        <th id="ddd" width="70px" height="70px">5</th>
+                        <th width="70px" height="70px">6</th>
+                        <th width="70px" height="70px">7</th>
+                    
+                    </tr>
+                    <tr>
+                        <td id="zzz" width="70px" height="70px">8</td>
+                        <td id="lll" width="70px" height="70px"> <button onclick="funcao2()">9</button>
+ 
+                            <p id="demo"></p>
+                            
+                            <script>
+                            function funcao2()
+                            {
+                            var x;
+                            var r=confirm("Deseja cancelar esse evento?");
+                            if (r==true)
+                            {
+                            x="você cancelou esse evento!";
+                            }
+                            else
+                            {
+                            x="";
+                            }
+                            document.getElementById("demo").innerHTML=x;
+                            }
+                            </script></a></td></td>
+                        <td width="70px" height="70px">10</td>
+                        <td id="zzz" width="70px" height="70px">11</td>
+                        <td id="ddd" width="70px" height="70px">12</td>
+                        <td id="ddd" width="70px" height="70px">13</td>
+                        <td id="lll" width="70px" height="70px"> <button onclick="funcao1()">14</button>
+ 
+                            <p id="demo"></p>
+                            
+                            <script>
+                            function funcao1()
+                            {
+                            var x;
+                            var r=confirm("Deseja cancelar esse evento?");
+                            if (r==true)
+                            {
+                            x="você cancelou esse evento!";
+                            }
+                            else
+                            {
+                            x="";
+                            }
+                            document.getElementById("demo").innerHTML=x;
+                            }
+                            </script></a></td></td>
+                    </tr>
+                    <tr>
+                        <td id="fff" width="70px" height="70px">15</td>
+                        <td width="70px" height="70px">16</td>
+                        <td id="fff" width="70px" height="70px">17</td>
+                        <td id="lll" width="70px" height="70px"><a href="#"> <button onclick="funcao1()">18</button>
+ 
+                            <p id="demo"></p>
+                            
+                            <script>
+                            function funcao1()
+                            {
+                            var x;
+                            var r=confirm("Deseja cancelar esse evento?");
+                            if (r==true)
+                            {
+                            x="você cancelou esse evento!";
+                            }
+                            else
+                            {
+                            x="";
+                            }
+                            document.getElementById("demo").innerHTML=x;
+                            }
+                            </script></a></td>
+                       
+                        <td width="70px" height="70px">19</td>
+                        <td id="ddd" width="70px" height="70px">20</td>
+                        <td width="70px" height="70px">21</td>
+                    </tr>
+                    <tr>
+                        <td id="fff" width="70px" height="70px">22</td>
+                        <td id="fff" width="70px" height="70px">23</td>
+                        <td width="70px" height="70px">24</td>
+                        <td id="ddd" width="70px" height="70px">25</td>
+                        <td width="70px" height="70px">26</td>
+                        <td id="ddd" width="70px" height="70px">27</td>
+                        <td width="70px" height="70px">28</td>
+                    </tr>
+                    <tr>
+                        <td id="ddd" width="70px" height="70px">29</td>
+                        <td id="ddd" width="70px" height="70px">30</td>
+                        <td id="ddd" width="70px" height="70px">31</td>
+                    </tr>
+                
+                    <a href="Cancelar evento"></a>
+                </table>
+            
+            
+            
+            </section>
+
+            <section id="historia">
+                <h2>Usuario</h2>
+                    <div id="aaa">
+                        <div id="container-historia">
+                            <h3>Seus dados</h3>
+                                <p>
+                               Nome: Rodolfo Bartolomeu de Carlos
+                               _________________________________
+                               <br/>
+                               Nome do usuario: Carlos
+                               _________________________________
+
+                               <br/>
+                               CPF: 123-123-123-32
+                               _________________________________
+                               <br/>
+                               Numero: (11) 954234234
+                               _________________________________
+                               <br/>
+                               Status do evento: Dia 18 as 14:00 até 24:50
+                               ____________________________________________
+                               <br/>
+                               Serviços adicionais: Luz e Som
+                               _________________________________
+                               <br/>
+                               Status do pagamento: Pago
+                               _________________________________
+                               <br/>
+                               E-mail: eaetouxaqueleu@email.com
+                               _________________________________                           
+                            <br/>
+                            <a href="#">Editar dados</a>     
+                            </p>
+                        </div>

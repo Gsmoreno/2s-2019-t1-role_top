@@ -1,28 +1,15 @@
 <link rel="stylesheet" type="text/css" href="~/css/galeria.css">
-<body>
-    <header>
-        <nav > 
+<header>
+        <nav> 
                 <ul>
-                        <li id="bt-mobile-menu">
-                                <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
-                                    <i class="fa fa-bars"></i>
-                                </a>
-                            </li>
                     
-                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href= '@Url.Action("Index", "Home")#historia' >A RoleTop</a></li>
-                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" asp-controller="cliente" asp-action="Galeria">Galeria</a></li>
-                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href= '@Url.Action("Index", "Home")#localização'>Onde estamos</a></li>
-                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href= '@Url.Action("Index", "Home")#Agenda'>Agenda</a></li>
-                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href= '@Url.Action("Index", "Home")#FAQ'>FAQ</a></li>
-                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" asp-controller="cliente" asp-action="Login">Cadastro/Login</a></li>
+                    <li><a href= '@Url.Action("Dados", "Home")#historia' >A RoleTop</a></li>
+                    <li><a asp-controller="cliente" asp-action="Galeria">Galeria</a></li>
+                    <li><a href= '@Url.Action("Dados", "Home")#localização'>Onde estamos</a></li>
+                    <li><a href= '@Url.Action("Dados", "Home")#Agenda'>Agenda</a></li>
+                    <li><a asp-controller="cliente" asp-action="Dados">Carlos</a></li>
                 </ul>
-
-                
-                
-                
-    </nav>
-</header>
-</body>
+        </nav>
 <section id="Galeria">
         <div class="area-galeria">
             <h2>Galeria</h2>

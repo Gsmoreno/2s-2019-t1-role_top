@@ -16,6 +16,12 @@ namespace RoleTopMVC.Controllers
             return View();
         }
 
+        public IActionResult Galeriauser()
+        {
+            ViewData["NomeView"] = "Fotos";
+            return View();
+        }
+
         public IActionResult Adm()
         {
             ViewData["NomeView"] = "adm";
