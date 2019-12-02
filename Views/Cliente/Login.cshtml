@@ -24,53 +24,73 @@
 </header>
 </body>
 <div class="form-area">
-        <h2>Login</h2>
-        <form action="">
-            <p>Email:</p>
-            <input type="text" name="" placeholder="___________________________________________">
-
-            <p>Senha:</p>
-            <input type="password" name="" placeholder="___________________________________________">
-            <a href="Esqueceu a senha?">Esqueceu a senha?</a>
-            <a asp-controller="cliente" asp-action="Adm">Entrar como ADM</a>
-       
-                            
-            <button  class="login100-form-btn" >
-                <a asp-controller="cliente" asp-action="Usuario">Login</a>
-                </button>        
-            
-           
+        <main>
+    <h2>Login</h2>
+    <form method="POST" action='@Url.Action("Login", "Cliente")'>
         
-            
-        </form>
+        <div>
+            <label for="email">E-mail</label>
+            <br />
+            <input id="email" type="email" name="email" placeholder="___________________________________________"/>
+        </div>
+
+        <div>
+            <label for="senha">Senha</label>
+            <br />
+            <input id="senha" type="password" name="senha" placeholder="___________________________________________"/>
+        </div>
+
+        <input type="submit" value="Entrar!"  />
+
+       
+    </form>
+
+</main>
              </div>       
     
     </div>
     
-    <div class="Cadastro">
-        <h2>Cadastro</h2>
-        <form action="">
-            <p>Email:</p>
-            <input type="text" name="" placeholder="___________________________________________">
+<div class="Cadastro">
+        <main>
+    <h2>Cadastro</h2>
+    <form method="POST" action='@Url.Action("CadastrarCliente", "Cadastro")'>
+        <div>
+            <label for="nome">Nome Completo</label> 
+            <br />
+            <input id="nome" type="text" maxlength="20" minlength="3" name="nome" placeholder="___________________________________________" />
+        </div>
 
-            <p>CPF:</p>
-            <input type="text" name="" placeholder="___________________________________________">
+        <div>
+            <label for="email">E-mail</label>
+            <br />
+            <input id="email" type="email" maxlength="60" minlength="3" name="email"  placeholder="___________________________________________"/>
+        </div>
 
-          
-            <p>Nome de usuario:</p>
-            <input type="text" name="" placeholder="___________________________________________">
+        
 
-            <p>Senha:</p>
-            <input type="password" name="" placeholder="___________________________________________">
+        <div>
+            <label for="telefone">Telefone</label>
+            <br />
+            <input id="telefone" type="telefone" maxlength="20" minlength="3" name="telefone" placeholder="___________________________________________" />
+        </div>
 
-            <p>Confirme a senha:</p>
-            <input type="password" name="" placeholder="___________________________________________">
-            
-                 
-            <button  class="login100-form-btn">
-                Login
-                </button>        
-            
-        </form>        
+        
+
+        <div>
+            <label for="senha">Senha</label>
+            <br />
+            <input id="senha" type="password" maxlength="20" minlength="6" name="senha" placeholder="___________________________________________" />
+        </div>
+
+        <div>
+            <label for="confirmar-senha">Confirmar Senha</label>
+            <br />
+            <input id="confirmar-senha" type="password" maxlength="20" minlength="6" name="confirmar-senha" placeholder="___________________________________________" />
+        </div>
+        
+        <input type="submit" value="Finalizar cadastro" />
+        
+    </form>
+</main>
     </div>
 

@@ -2961,11 +2961,6 @@
   "RootNamespace": "RoleTopMVC",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\49801332824\\Desktop\\workspace\\2s-2019-t1-role_top\\Role Top\\RoleTopMVC\\Views\\Cliente\\Dados.cshtml",
-      "TargetPath": "Views\\Cliente\\Dados.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\49801332824\\Desktop\\workspace\\2s-2019-t1-role_top\\Role Top\\RoleTopMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -2991,13 +2986,18 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\49801332824\\Desktop\\workspace\\2s-2019-t1-role_top\\Role Top\\RoleTopMVC\\Views\\Cliente\\Adm.cshtml",
-      "TargetPath": "Views\\Cliente\\Adm.cshtml",
+      "FilePath": "c:\\Users\\49801332824\\Desktop\\workspace\\2s-2019-t1-role_top\\Role Top\\RoleTopMVC\\Views\\Adm\\Dashboard.cshtml",
+      "TargetPath": "Views\\Adm\\Dashboard.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\49801332824\\Desktop\\workspace\\2s-2019-t1-role_top\\Role Top\\RoleTopMVC\\Views\\Cliente\\Usuario.cshtml",
-      "TargetPath": "Views\\Cliente\\Usuario.cshtml",
+      "FilePath": "c:\\Users\\49801332824\\Desktop\\workspace\\2s-2019-t1-role_top\\Role Top\\RoleTopMVC\\Views\\Dados\\Dados.cshtml",
+      "TargetPath": "Views\\Dados\\Dados.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49801332824\\Desktop\\workspace\\2s-2019-t1-role_top\\Role Top\\RoleTopMVC\\Views\\Shared\\Sucesso.cshtml",
+      "TargetPath": "Views\\Shared\\Sucesso.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -3016,11 +3016,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\49801332824\\Desktop\\workspace\\2s-2019-t1-role_top\\Role Top\\RoleTopMVC\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\49801332824\\Desktop\\workspace\\2s-2019-t1-role_top\\Role Top\\RoleTopMVC\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -3028,6 +3023,16 @@
     {
       "FilePath": "c:\\Users\\49801332824\\Desktop\\workspace\\2s-2019-t1-role_top\\Role Top\\RoleTopMVC\\Views\\Cliente\\Login.cshtml",
       "TargetPath": "Views\\Cliente\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49801332824\\Desktop\\workspace\\2s-2019-t1-role_top\\Role Top\\RoleTopMVC\\Views\\User\\Usuario.cshtml",
+      "TargetPath": "Views\\User\\Usuario.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49801332824\\Desktop\\workspace\\2s-2019-t1-role_top\\Role Top\\RoleTopMVC\\Views\\Shared\\Erro.cshtml",
+      "TargetPath": "Views\\Shared\\Erro.cshtml",
       "FileKind": "mvc"
     },
     {
