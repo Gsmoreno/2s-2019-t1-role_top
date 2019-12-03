@@ -45,7 +45,7 @@ namespace RoleTopMVC.Repositorios
 
         private string PrepararRegistroCSV(Cliente cliente)
         {
-            return $"nome={cliente.Nome};email={cliente.Email};senha={cliente.Senha};telefone={cliente.Telefone}";
+            return $"tipo_usuario={cliente.TipoUsuario};nome={cliente.Nome};email={cliente.Email};senha={cliente.Senha};telefone={cliente.Telefone}";
         }
     }
 }

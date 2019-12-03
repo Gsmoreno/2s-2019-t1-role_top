@@ -23,17 +23,9 @@ namespace RoleTopMVC.Controllers
             return View();
         }
 
-        public IActionResult Adm()
-        {
-            ViewData["NomeView"] = "adm";
-            return View();
-        }
+        
 
-        public IActionResult Usuario()
-        {
-            ViewData["NomeView"] = "user";
-            return View();
-        }
+       
 
         public IActionResult Dados()
         {
@@ -82,7 +74,7 @@ namespace RoleTopMVC.Controllers
                                 HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
                                 HttpContext.Session.SetString(SESSION_CLIENTE_TIPO, cliente.TipoUsuario.ToString());
                                 
-                                return RedirectToAction("Historico","Cliente");
+                                return RedirectToAction("Usuario","Cliente");
                             
                             default:
                                 HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
@@ -101,7 +93,7 @@ namespace RoleTopMVC.Controllers
                 } 
                 else
                 {
-                    return View("Erro", new RespostaViewModel($"Usuário {usuario} não encontrado"));
+                    return View("Erro", new RespostaViewModel($"Usuário {usuario} não encontrado" ));
                 }
 
             }
@@ -132,6 +124,16 @@ namespace RoleTopMVC.Controllers
             HttpContext.Session.Remove(SESSION_CLIENTE_NOME);
             HttpContext.Session.Clear();
             return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult Usuario()
+        {
+            return View(new BaseViewModel()
+            {
+                NomeView = "Usuario",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
         }
     }
 }

@@ -1,18 +1,21 @@
+@model RoleTopMVC.ViewModels.DashboardViewModel
 <link rel="stylesheet" type="text/css" href="~/css/adm.css">
 <section id="status-pedidos">
+            
+
             <h3>Status do Evento</h3>
             <div id="painel">
                 <div class="box-status-pedidos aprovados">
                     <h4>Aprovados</h4>
-                    <p>48</p>
+                    <p>@Model.PedidosAprovados</p>
                 </div>
                 <div class="box-status-pedidos pendentes">
                     <h4>Pendentes</h4>
-                    <p>30</p>
+                    <p>@Model.PedidosPendentes</p>
                 </div>
                 <div class="box-status-pedidos reprovados">
                     <h4>Reprovados</h4>
-                    <p>14</p>
+                    <p>@Model.PedidosReprovados</p>
                 </div>
             </div>
         </section>
@@ -23,7 +26,7 @@
                 <thead>
                     <tr>
                         <th rowspan="2">Nome</th>
-                        <th rowspan="2">Dtata e Hora do Evento</th>
+                        <th rowspan="2">Data e Hora do Evento</th>
                         <th colspan="2">Status do Pagamento</th>
                         <th colspan="2" rowspan="2">Aprovar</th>
                     </tr>
@@ -31,48 +34,29 @@
                 <tfoot>
                     <tr>
                         <td colspan="6">
-                            <p>Eventos atualizados em 24/09/2019 às 9:31</p>
+                            <p>Eventos atualizados em @DateTime.Now</p>
                         </td>
                     </tr>
                 </tfoot>
                 <tbody>
-                    <tr>
-                        <td><a href= '@Url.Action("Adm", "Home")#usuarios'>Alberto Carvalho</a></td>
-                        <td>Dia: 12/10/2019 Hora: 14:00 ás 03:00</td>
-                        <td>Pago</td>
-                        <td>Dia: 24/09/2019 Hora: 12:43</td>
-                        <td><a href="#">Cancelar<i class="fas fa-check"></i></a></td>
-                        <td><a href="#">Aprovar<i class="fas fa-times"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td><a href= '@Url.Action("Adm", "Home")#usuarios'>Tomas Turbando</a></td>
-                        <td>Dia: 12/10/2019 Hora: 14:00 ás 03:00 </td>
-                        <td>Pendente</td>
-                        <td>....</td>
-                        <td><a href="#">Cancelar<i class="fas fa-check"></i></a></td>
-                        <td><a href="#">Aprovar<i class="fas fa-times"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td><a href= '@Url.Action("Adm", "Home")#usuarios'>Antonio Chagas</a></td>
-                        <td>Dia: 12/10/2019 Hora: 14:00 ás 03:00</td>
-                        <td>Pago</td>
-                        <td>Dia: 24/09/2019 Hora: 12:43</td>
-                        <td><a href="#">Cancelar<i class="fas fa-check"></i></a></td>
-                        <td><a href="#">Aprovar<i class="fas fa-times"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td><a href= '@Url.Action("Adm", "Home")#usuarios'>Amelia Antonia</a></td>
-                        <td>Dia: 12/10/2019 Hora: 14:00 ás 03:00</td>
-                        <td>Pago</td>
-                        <td>Dia: 24/09/2019 Hora: 12:43</td>
-                        <td><a href="#">Cancelar<i class="fas fa-check"></i></a></td>
-                        <td><a href="#">Aprovar<i class="fas fa-times"></i></a></td>
-                    </tr>
+                    @foreach(var pedido in Model.Pedidos )
+                    {
+                        <tr>
+                            <td>@pedido.Cliente.Nome</td>
+                            <td>@pedido.Cliente.Email</td>
+                            <td>@pedido.Cliente.Telefone</td>
+                            
+                            <td><a href='@Url.Action("Aprovar", "Pedido", new {id = @pedido.Id})'><i class="fas fa-check"></i></a></td>
+                            <td><a href='@Url.Action("Reprovar", "Pedido", new {id = @pedido.Id})'><i class="fas fa-times"></i></a></td>
+                        </tr>
+                    }
                 </tbody>
             </table>
         </section>
 
     </main>
+
+  
 
     
 

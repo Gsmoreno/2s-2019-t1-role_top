@@ -1,4 +1,5 @@
-﻿<body>
+﻿@model RoleTopMVC.ViewModels.PedidoViewModel
+<body>
     <header>
         <nav > 
                 <ul>
@@ -14,7 +15,7 @@
                     <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href= '@Url.Action("Index", "Home")#Agenda'>Agenda</a></li>
                     <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href= '@Url.Action("Index", "Home")#FAQ'>FAQ</a></li>
                     <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" asp-controller="cliente" asp-action="Login">Cadastro/Login</a></li>
-                    <li class="bt-common-menu"><a  onclick="toggleMobileMenu()" href= '@Url.Action("Index", "Home")#FAQ'>Alugue Aqui!</a></li>
+                    
                 </ul>
 
                 
@@ -204,37 +205,7 @@
     
 </script>
 
-<div class="Pedidos">
-        <h2>Alugue Aqui!</h2>
-        <form method="POST" action='@Url.Action("Registrar","Pedido")'>
-            <div>
-                <label for="nome">Nome Completo</label>
-                <br />
-                <input id="nome" type="text" maxlength="20" minlength="3" value="@Model.Cliente.Nome" name="nome"  placeholder="___________________________________________"/>
-            </div>
 
-            <div>
-                <label for="endereco">Endereço</label>
-                <br />
-                <input id="endereco" type="text" maxlength="20" minlength="3" value="@Model.Cliente.Endereco" name="endereco"  placeholder="___________________________________________"/>
-            </div>
-
-            <div>
-                <label for="telefone">Telefone para contato</label>
-                <br />
-                <input id="telefone" type="text" placeholder="11 12345 6789" value="@Model.Cliente.Telefone" name="telefone"  placeholder="___________________________________________"/>
-            </div>
-
-            <div>
-                <label for="email">E-mail</label>
-                <br />
-                <input id="email" type="email" name="email" value="@Model.Cliente.Email"  placeholder="___________________________________________"/>
-            </div>
-
-            <input type="submit" value="Finalizar pedido!" />
-        </form>
-
-    </div>
 
 <footer>
     <div class="section-container ">
