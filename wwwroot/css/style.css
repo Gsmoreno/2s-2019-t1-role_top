@@ -161,7 +161,48 @@ nav ul > li > a{
 
 h4{
     color: #eee;
+    font-family: 'Chilanka', cursive;
 }
+
+
+.Pedidos input,select{
+    margin-bottom: 80px;
+    width: 50%;
+    background: transparent;
+    outline: none;
+
+}
+label{
+    font-family: 'Chilanka', cursive;
+    color: white;
+    font-size: 150%;
+}
+
+.Pedidos input[type=text],
+.Pedidos input[type=email],
+.Pedidos input[type = date],
+.Pedidos input[type = submit]
+{
+    border:none;
+    border-bottom: 1px solod #7d0093;
+    outline:none;
+    width: 600px;
+    
+    color: #7d0093;
+    
+    background: none;
+}
+
+::placeholder{
+    color: #7d0093;
+    width: 600px;
+    
+}
+value{
+    font-size: 180%;
+}
+
+
 
 
 

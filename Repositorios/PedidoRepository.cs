@@ -50,7 +50,7 @@ namespace RoleTopMVC.Repositorios
                 pedido.Cliente.Nome = ExtrairValorDoCampo("cliente_nome", linha);
                 pedido.Cliente.Telefone = ExtrairValorDoCampo("cliente_telefone", linha);
                 pedido.Cliente.Email = ExtrairValorDoCampo("cliente_email", linha);
-                pedido.DataDoPedido = DateTime.Parse(ExtrairValorDoCampo("data_pedido", linha));
+                pedido.DataDoPedido = DateTime.Parse(ExtrairValorDoCampo("data_evento", linha));
 
                 pedidos.Add(pedido);
             }

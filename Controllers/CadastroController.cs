@@ -36,8 +36,11 @@ namespace RoleTopMVC.Controllers
 
                 cliente.TipoUsuario = (uint) TiposUsuario.CLIENTE;
                 
+
+                if (!string.IsNullOrEmpty(form["nome"]) && !string.IsNullOrEmpty(form["telefone"]) && !string.IsNullOrEmpty(form["senha"]) && !string.IsNullOrEmpty(form["email"]) )
+                {
                 clienteRepository.Inserir(cliente);
-                
+
                 return View("Sucesso", new RespostaViewModel()
                 {
                     NomeView = "Cadastro",
@@ -45,6 +48,13 @@ namespace RoleTopMVC.Controllers
                     UsuarioNome = ObterUsuarioNomeSession()
                     
                 });
+                    
+                }else
+                {
+                    return View("Erro", new RespostaViewModel());
+                }
+                
+                
             } 
             catch(Exception e)
             {

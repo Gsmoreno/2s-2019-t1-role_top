@@ -36,3 +36,4 @@ C:\Users\49801332824\Desktop\workspace\2s-2019-t1-role_top\Role Top\RoleTopMVC\o
 C:\Users\49801332824\Desktop\workspace\2s-2019-t1-role_top\Role Top\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Sucesso.g.cshtml.cs
 C:\Users\49801332824\Desktop\workspace\2s-2019-t1-role_top\Role Top\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Administrador\Dashboard.g.cshtml.cs
 C:\Users\49801332824\Desktop\workspace\2s-2019-t1-role_top\Role Top\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\Usuario.g.cshtml.cs
+C:\Users\49801332824\Desktop\workspace\2s-2019-t1-role_top\Role Top\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Pedido\Pedido.g.cshtml.cs

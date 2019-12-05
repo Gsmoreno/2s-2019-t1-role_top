@@ -1,13 +1,15 @@
+@model RoleTopMVC.ViewModels.BaseViewModel
 <link rel="stylesheet" type="text/css" href="~/css/galeria.css">
+<link href="img/logo.png" rel="icon" type="image/x-icon">
 <header>
         <nav> 
                 <ul>
                     
-                    <li><a href= '@Url.Action("Dados", "Home")#historia' >A RoleTop</a></li>
-                    <li><a asp-controller="cliente" asp-action="Galeria">Galeria</a></li>
-                    <li><a href= '@Url.Action("Dados", "Home")#localização'>Onde estamos</a></li>
-                    <li><a href= '@Url.Action("Dados", "Home")#Agenda'>Agenda</a></li>
-                    <li><a asp-controller="cliente" asp-action="Dados">Carlos</a></li>
+                    <li><a asp-controller="cliente" asp-action="Usuario"#historia >A RoleTop</a></li>
+                    <li><a asp-controller="cliente" asp-action="Galeriauser">Galeria</a></li>
+                    <li><a asp-controller="cliente" asp-action="Usuario"#localização>Onde estamos</a></li>
+                    <li><a asp-controller="cliente" asp-action="Usuario"#Agenda>Agenda</a></li>
+                    <li><a asp-controller="Dados" asp-action="Dados">Voce!</a></li>
                 </ul>
         </nav>
 <section id="Galeria">

@@ -27,11 +27,7 @@ namespace RoleTopMVC.Controllers
 
        
 
-        public IActionResult Dados()
-        {
-            ViewData["NomeView"] = "user";
-            return View();
-        }
+        
 
         private ClienteRepository clienteRepository = new ClienteRepository();
         private PedidoRepository pedidoRepository = new PedidoRepository();
@@ -76,12 +72,14 @@ namespace RoleTopMVC.Controllers
                                 
                                 return RedirectToAction("Usuario","Cliente");
                             
-                            default:
+                         default:
                                 HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
                                 HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
                                 HttpContext.Session.SetString(SESSION_CLIENTE_TIPO, cliente.TipoUsuario.ToString());
                                 
                                 return RedirectToAction("Dashboard","Administrador");
+                                
+                                
                             
                         }
                     }

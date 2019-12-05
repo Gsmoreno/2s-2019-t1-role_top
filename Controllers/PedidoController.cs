@@ -15,7 +15,9 @@ namespace RoleTopMVC.Controllers
         
         ClienteRepository clienteRepository = new ClienteRepository();
 
-        public IActionResult Index () {
+        
+        
+        public IActionResult Pedido () {
 
             PedidoViewModel pvm = new PedidoViewModel();
             

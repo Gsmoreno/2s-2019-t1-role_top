@@ -10,6 +10,7 @@ namespace RoleTopMVC.Models
         public string Senha { get; set; }
         public string Email { get; set; }
         
+        
         public uint TipoUsuario {get;set;}
 
         public Cliente()
@@ -24,6 +25,7 @@ namespace RoleTopMVC.Models
             this.Telefone = telefone;
             this.Senha =  senha;
             this.Email = email;
+            
             
             
         }

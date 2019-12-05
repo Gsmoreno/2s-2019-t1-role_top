@@ -36,6 +36,7 @@ namespace RoleTopMVC.Repositorios
                     c.Email = ExtrairValorDoCampo("email", item);
                     c.Telefone = ExtrairValorDoCampo("telefone", item);
                     c.Senha = ExtrairValorDoCampo("senha", item);
+                    c.TipoUsuario = uint.Parse(ExtrairValorDoCampo("tipo_usuario", item));
 
                     return c;
                 }
@@ -45,7 +46,7 @@ namespace RoleTopMVC.Repositorios
 
         private string PrepararRegistroCSV(Cliente cliente)
         {
-            return $"tipo_usuario={cliente.TipoUsuario};nome={cliente.Nome};email={cliente.Email};senha={cliente.Senha};telefone={cliente.Telefone}";
+            return $"tipo_usuario={cliente.TipoUsuario};nome={cliente.Nome};email={cliente.Email};senha={cliente.Senha};telefone={cliente.Telefone};";
         }
     }
 }

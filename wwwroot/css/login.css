@@ -140,7 +140,9 @@ button, input {
     overflow: visible;
 }
 
-
+label{
+    color: #7d0093;
+}
 
 
 

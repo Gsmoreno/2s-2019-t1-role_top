@@ -1,4 +1,2 @@
-tipo_usuario=1;nome=Joao Abreu Sauro;email=gustavosilva.moreno2003@gmail.com;senha=asdfgh;telefone=1123456567
-tipo_usuario=0;nome=Joao Abreu Sauro;email=gustavosilva.moreno2003@gmail.com;senha=asdfghj;telefone=1123456567
-tipo_usuario=0;nome=Joao Abreu Sauro;email=gugusmoreno12@gmail.com;senha=danieleghenio;telefone=1123456567
-tipo_usuario=0;nome=Joao Abreu Sauro;email=patysmoreno@yahoo.com.br;senha=123456;telefone=11 23544334
+tipo_usuario=0;nome=Adm;email=adm@email.com;senha=admin123;telefone=123456789;
+tipo_usuario=1;nome=ronaldo;email=gugusmoreno12@gmail;senha=123456;telefone=1123456567;

@@ -3026,6 +3026,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\49801332824\\Desktop\\workspace\\2s-2019-t1-role_top\\Role Top\\RoleTopMVC\\Views\\Pedido\\Pedido.cshtml",
+      "TargetPath": "Views\\Pedido\\Pedido.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\49801332824\\Desktop\\workspace\\2s-2019-t1-role_top\\Role Top\\RoleTopMVC\\Views\\Administrador\\Dashboard.cshtml",
       "TargetPath": "Views\\Administrador\\Dashboard.cshtml",
       "FileKind": "mvc"
