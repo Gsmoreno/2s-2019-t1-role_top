@@ -1,0 +1,13 @@
+*{
+    background-image: url(../img/fundo.jpg);
+    padding: none;
+    margin: none;
+}
+h2{
+    color: white;
+}
+p{
+    color: white;
+    font-size: 150%;
+    font-family: 'Chilanka', cursive;
+}

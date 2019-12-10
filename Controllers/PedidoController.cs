@@ -10,17 +10,18 @@ namespace RoleTopMVC.Controllers
 {
     public class PedidoController : AbstractController
     {
-        PedidoRepository pedidoRepository = new PedidoRepository ();
-        
-        
+        PedidoRepository pedidoRepository = new PedidoRepository();
+
+
         ClienteRepository clienteRepository = new ClienteRepository();
 
-        
-        
-        public IActionResult Pedido () {
+
+
+        public IActionResult Pedido()
+        {
 
             PedidoViewModel pvm = new PedidoViewModel();
-            
+
 
             var usuarioLogado = ObterUsuarioSession();
             var nomeUsuarioLogado = ObterUsuarioNomeSession();
@@ -28,7 +29,7 @@ namespace RoleTopMVC.Controllers
             {
                 pvm.NomeUsuario = nomeUsuarioLogado;
             }
-            
+
             var clienteLogado = clienteRepository.ObterPor(usuarioLogado);
             if (clienteLogado != null)
             {
@@ -39,51 +40,70 @@ namespace RoleTopMVC.Controllers
             pvm.UsuarioEmail = usuarioLogado;
             pvm.UsuarioNome = nomeUsuarioLogado;
 
-            return View (pvm);
+            return View(pvm);
         }
 
-        public IActionResult Registrar (IFormCollection form) {
-            ViewData["Action"] = "Pedido";
-            Pedido pedido = new Pedido ();
+        public IActionResult Registrar(IFormCollection form)
+        {
 
-            
+            try
+            {
+                ViewData["Action"] = "Pedido";
+                Pedido pedido = new Pedido();
 
-            Cliente cliente = new Cliente () {
-                Nome = form["nome"],
-                Telefone = form["telefone"],
-                Email = form["email"]
-            };
 
-            pedido.Cliente = cliente;
 
-            pedido.DataDoPedido = DateTime.Now;
-
-            
-
-            if (pedidoRepository.Inserir (pedido)) {
-                return View ("Sucesso", new RespostaViewModel()
+                Cliente cliente = new Cliente()
                 {
-                    NomeView = "Pedido",
-                    UsuarioEmail = ObterUsuarioSession(),
-                    UsuarioNome = ObterUsuarioNomeSession()
-                    
-                });
-            } else {
-                return View ("Erro", new RespostaViewModel()
+                    Nome = form["nome"],
+                    Telefone = form["telefone"],
+                    Email = form["email"]
+                };
+
+                pedido.Cliente = cliente;
+
+                pedido.DataDoPedido = DateTime.Parse(form["data"]);
+
+
+
+                if (pedidoRepository.Inserir(pedido))
                 {
-                    NomeView = "Pedido",
-                    UsuarioEmail = ObterUsuarioSession(),
-                    UsuarioNome = ObterUsuarioNomeSession()
-                });
+                    return View("Sucesso", new RespostaViewModel()
+                    {
+                        NomeView = "Pedido",
+                        UsuarioEmail = ObterUsuarioSession(),
+                        UsuarioNome = ObterUsuarioNomeSession()
+
+                    });
+                }
+                else
+                {
+                    return View("Erro", new RespostaViewModel()
+                    {
+                        NomeView = "Pedido",
+                        UsuarioEmail = ObterUsuarioSession(),
+                        UsuarioNome = ObterUsuarioNomeSession(),
+
+                    });
+                }
+                
             }
+            catch(Exception e)
+            {
+                System.Console.WriteLine(e.StackTrace);
+                return View("Erro", new RespostaViewModel("Insira os dados para agendar o evento!"));
+            }
+                
+                
+
         }
 
         public IActionResult Aprovar(ulong id)
         {
             var pedido = pedidoRepository.ObterPor(id);
-            pedido.Status = (uint) StatusPedido.APROVADO;
+            pedido.Status = (uint)StatusPedido.APROVADO;
 
-            if(pedidoRepository.Atualizar(pedido))
+            if (pedidoRepository.Atualizar(pedido))
             {
                 return RedirectToAction("Dashboard", "Administrador");
             }
@@ -102,9 +122,9 @@ namespace RoleTopMVC.Controllers
         public IActionResult Reprovar(ulong id)
         {
             var pedido = pedidoRepository.ObterPor(id);
-            pedido.Status = (uint) StatusPedido.REPROVADO;
+            pedido.Status = (uint)StatusPedido.REPROVADO;
 
-            if(pedidoRepository.Atualizar(pedido))
+            if (pedidoRepository.Atualizar(pedido))
             {
                 return RedirectToAction("Dashboard", "Administrador");
             }

@@ -181,7 +181,8 @@ label{
 .Pedidos input[type=text],
 .Pedidos input[type=email],
 .Pedidos input[type = date],
-.Pedidos input[type = submit]
+.Pedidos input[type = submit],
+.Pedidos input[type = datetime-local]
 {
     border:none;
     border-bottom: 1px solod #7d0093;
@@ -221,8 +222,8 @@ value{
 #container-historia{
     background-image: linear-gradient(#7d0093, #ffc600);
     text-align: center;
-    height: 600px ;
-    width: 600px;
+    height: 560px ;
+    width: 500px;
     display: flex;
     flex-direction: column;
     font-size: 1.3em;
@@ -256,11 +257,11 @@ value{
  #cesar{
     background-image: linear-gradient(#7d0093, #ffc600);
     height: 300px ;
-    width: 600px;
+    width: 460px;
     display: flex;
     flex-direction: column;
     font-size: 1.3em;
-    margin: 25px;
+    margin: 20px;
     border: black solid 4px;
     border-radius: 20px;
     justify-content: space-between;    
@@ -270,7 +271,7 @@ value{
    display: block;
    justify-content: center;
    color: black;
-   font-size: 1.5em;
+   font-size: 1.3em;
    padding: 2em;
    color: white;
    font-family: 'Chilanka', cursive;
@@ -290,7 +291,7 @@ value{
  #ale{
     background-image: linear-gradient(#7d0093, #ffc600);
     height: 300px ;
-    width: 600px;
+    width: 60px;
     display: flex;
     flex-direction: column;
     font-size: 1.3em;

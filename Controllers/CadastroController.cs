@@ -29,15 +29,17 @@ namespace RoleTopMVC.Controllers
             {
                 Cliente cliente = new Cliente(
                     form["nome"],
+                    form["email"],
                     form["telefone"],
-                    form["senha"],
-                    form["email"]);
+                    form["senha"]);
+                    
+                    
                     
 
                 cliente.TipoUsuario = (uint) TiposUsuario.CLIENTE;
                 
 
-                if (!string.IsNullOrEmpty(form["nome"]) && !string.IsNullOrEmpty(form["telefone"]) && !string.IsNullOrEmpty(form["senha"]) && !string.IsNullOrEmpty(form["email"]) )
+                if (!string.IsNullOrEmpty(form["nome"]) && !string.IsNullOrEmpty(form["email"]) && !string.IsNullOrEmpty(form["senha"]) && !string.IsNullOrEmpty(form["telefone"]))
                 {
                 clienteRepository.Inserir(cliente);
 
@@ -51,6 +53,9 @@ namespace RoleTopMVC.Controllers
                     
                 }else
                 {
+                    System.Console.WriteLine();
+                    System.Console.WriteLine();
+                    System.Console.WriteLine();
                     return View("Erro", new RespostaViewModel());
                 }
                 

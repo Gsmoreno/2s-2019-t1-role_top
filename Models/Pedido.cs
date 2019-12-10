@@ -11,7 +11,7 @@ namespace RoleTopMVC.Models
         
 
         public DateTime DataDoPedido {get;set;}
-
+        public string Pagamento {get;set;}
         
 
         public uint Status {get;set;}
@@ -19,9 +19,10 @@ namespace RoleTopMVC.Models
         public Pedido()
         {
             this.Cliente = new Cliente();
-            
+            this.DataDoPedido = DataDoPedido;
             this.Id = 0;
-            this.Status = (uint) StatusPedido.PENDENTE; 
+            this.Status = (uint) StatusPedido.PENDENTE;
+            this.Pagamento = "Pendente";
         }
     }
 }

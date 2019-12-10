@@ -9,7 +9,7 @@ namespace RoleTopMVC.ViewModels
         
         public string NomeUsuario {get;set;}
         public Cliente Cliente {get;set;}
-        
+        public List<Pedido> Pedidos {get;set;}
 
         public PedidoViewModel()
         {
@@ -18,5 +18,7 @@ namespace RoleTopMVC.ViewModels
             this.Cliente = new Cliente();
             
         }
+
+        
     }
 }
