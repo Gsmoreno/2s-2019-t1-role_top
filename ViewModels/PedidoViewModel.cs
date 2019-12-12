@@ -14,9 +14,9 @@ namespace RoleTopMVC.ViewModels
         public PedidoViewModel()
         {
             
-            this.NomeUsuario = "Jovem";
+            this.NomeUsuario = "User";
             this.Cliente = new Cliente();
-            
+            this.Pedidos = new List<Pedido>();
         }
 
         

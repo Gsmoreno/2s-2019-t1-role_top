@@ -102,19 +102,7 @@ namespace RoleTopMVC.Controllers
             }
         }
     
-        public IActionResult Historico ()
-        {
-            var emailCliente = ObterUsuarioSession();
-            var pedidosCliente = pedidoRepository.ObterTodosPorCliente(emailCliente);
-
-            return View(new HistoricoViewModel()
-            {
-                Pedidos = pedidosCliente,
-                NomeView = "Histórico",
-                UsuarioEmail = ObterUsuarioSession(),
-                UsuarioNome = ObterUsuarioNomeSession()
-            });
-        }
+        
 
         public IActionResult Logoff()
         {

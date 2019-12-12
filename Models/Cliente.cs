@@ -19,13 +19,13 @@ namespace RoleTopMVC.Models
 
         }
 
-        public Cliente(string nome,  string telefone, string senha, string email)
+        public Cliente(string nome,string email,  string telefone, string senha )
         {
             this.Nome = nome;
-            
+            this.Email = email;
             this.Telefone = telefone;
             this.Senha =  senha;
-            this.Email = email;
+            
             
             
             

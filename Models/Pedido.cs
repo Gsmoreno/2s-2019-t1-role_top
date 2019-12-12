@@ -7,9 +7,6 @@ namespace RoleTopMVC.Models
     {
         public ulong Id {get;set;}
         public Cliente Cliente {get;set;}
-        
-        
-
         public DateTime DataDoPedido {get;set;}
         public string Pagamento {get;set;}
         
