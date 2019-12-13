@@ -160,15 +160,26 @@
                     <div id="aaa">
                         <div id="container-historia">
                             <h3>Seus dados</h3>
-                                <p>
-                                @foreach (var pedido in Model.Pedidos)
-                                {
-                                    <td>@pedido.DataDoPedido</td>
-                                    <td>@pedido.Cliente.Nome</td>
-                                    <td>@pedido.Status</td>
-                                    <td>@pedido.Pagamento</td>
-                                }
-                               <br/>
+                                <table>
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Nome</th>
+                <th>Pagamento</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach( var pedido in Model.Pedidos ) {
+                <tr>
+                    <td>@pedido.DataDoPedido</td>
+                    <td>@pedido.Cliente.Nome</td>
+                    <td>@pedido.Pagamento</td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
                                                      
                             
                             <a href="#">Editar dados</a>     

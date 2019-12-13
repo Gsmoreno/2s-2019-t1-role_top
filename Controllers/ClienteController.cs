@@ -114,12 +114,16 @@ namespace RoleTopMVC.Controllers
 
         public IActionResult Usuario()
         {
-            return View(new BaseViewModel()
+            var emailCliente = ObterUsuarioSession();
+
+            return View(new HistoricoViewModel()
             {
                 NomeView = "Usuario",
                 UsuarioEmail = ObterUsuarioSession(),
-                UsuarioNome = ObterUsuarioNomeSession()
+                UsuarioNome = ObterUsuarioNomeSession(),
             });
+            
         }
+        
     }
 }
